@@ -36,24 +36,25 @@ export function DemoBanner() {
 
   return (
     <div className="demo-banner" role="alert" aria-live="polite">
-      <span className="inline-flex items-center gap-2">
-        <svg
-          className="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-          />
-        </svg>
-        <span>
-          <strong>DEMO MODE</strong> — Calls go only to test numbers. No real
-          shops will be contacted.
+      <span className="inline-flex items-center gap-2.5">
+        <span className="flex items-center justify-center w-5 h-5 rounded-full bg-amber-500/20 border border-amber-500/30">
+          <svg
+            className="w-3 h-3 text-amber-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            aria-hidden="true"
+          >
+            <path
+              fillRule="evenodd"
+              d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </span>
+        <span className="text-amber-100/90">
+          <strong>DEMO MODE</strong>
+          <span className="mx-1.5 text-amber-500/50">—</span>
+          Calls go only to test numbers. No real shops will be contacted.
         </span>
       </span>
     </div>

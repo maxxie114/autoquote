@@ -218,13 +218,37 @@
     left: 0;
     right: 0;
     z-index: 50;
-    background-color: rgba(245, 158, 11, 0.9);
-    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    background: linear-gradient(
+      90deg,
+      #1a1a2e 0%,
+      #1a1a2e 100%
+    );
+    border-bottom: 1px solid rgba(245, 158, 11, 0.3);
+    color: #fbbf24;
     text-align: center;
-    padding: 0.5rem 1rem;
-    font-weight: 600;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    padding: 0 1rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  
+  .demo-banner strong {
+    color: #f59e0b;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  
+  /* Offset header when demo banner is present */
+  body:has(.demo-banner) header.sticky {
+    top: 2.5rem;
+  }
+  
+  /* Offset main content when demo banner is present */
+  body:has(.demo-banner) main {
+    padding-top: 2.5rem;
   }
   
   /* Status Stepper */
