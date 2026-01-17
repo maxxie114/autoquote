@@ -58,7 +58,7 @@ export default function HomePage() {
             size="lg"
             className="bg-indigo-500 hover:bg-indigo-600 text-white text-lg px-8 py-6"
           >
-            <Link href="/api/auth/login">Start New Quote</Link>
+            <Link href="/auth/login">Start New Quote</Link>
           </Button>
           <Button
             asChild
@@ -122,7 +122,7 @@ export default function HomePage() {
               size="lg"
               className="bg-indigo-500 hover:bg-indigo-600 text-white"
             >
-              <Link href="/api/auth/login">Get Started — It&apos;s Free</Link>
+              <Link href="/auth/login">Get Started — It&apos;s Free</Link>
             </Button>
             <p className="text-white/40 text-xs mt-3">
               No credit card required. Only pay when you&apos;re ready to book.

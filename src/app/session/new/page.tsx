@@ -60,7 +60,7 @@ export default function NewSessionPage() {
   }
 
   if (!user) {
-    router.push("/api/auth/login");
+    router.push("/auth/login");
     return null;
   }
 
